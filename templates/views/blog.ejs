@@ -1,0 +1,15 @@
+<%- include('../partials/header')%>
+<%- include('../partials/navbar')%>
+<div class="new_blog_top_margin">
+<h1>blog page</h1>
+<% blogs.forEach((blog)=>{ %>
+    <div>
+        <h2><%= blog.title %> </h2>
+        <img src="<%= blog.image %>" alt="">
+        <span><%= blog.date %></span>
+        <h2><%= blog.body.substring(0,150) %>......</h2>
+        <a href="/blogs/<%= blog._id %> " class="ui inverted green button">read more...</a>
+    </div>
+<% }) %> 
+</div>
+<%- include('../partials/footer')%>

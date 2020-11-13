@@ -1,0 +1,25 @@
+<%- include('../partials/header')%>
+<%- include('../partials/navbar')%>
+<div class="new_blog_top_margin">
+    <div class="ui huge text container segment">
+        <div class="ui huge header">New Blog</div>
+        <form class="ui form" action="/blogs" method="POST">
+            <div class="field">
+                <label for="">Title</label>
+                <input type="text" name="newTitle" placeholder="Title">
+            </div>
+            <div class="field">
+                <label for="">Title</label>
+                <input type="text" name="newImage" placeholder="image URL">
+            </div>
+            <div class="field">
+                <label for="">Discription</label>
+                <textarea name="newBody" id="" cols="30" rows="10" placeholder="Discription"></textarea>
+            </div>
+            <div class="field">
+                <input class="ui inverted big green button" type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</div>
+<%- include('../partials/footer')%>
